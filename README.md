@@ -46,52 +46,7 @@ git clone <repository-url>
 cd hiring-backend-apis
 ```
 
-### 2. Backend Setup
-
-#### Create Python Virtual Environment
-
-```bash
-# Create virtual environment
-python3 -m venv venv
-
-# Activate virtual environment
-# On macOS/Linux:
-source venv/bin/activate
-# On Windows:
-venv\Scripts\activate
-```
-
-#### Install Python Dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-#### Configure Environment Variables
-
-Create a `.env` file in the root directory:
-
-```env
-# MongoDB connection string
-# For local MongoDB:
-MONGODB_URL=mongodb://localhost:27017/
-
-# For MongoDB Atlas (replace with your connection string):
-# MONGODB_URL=mongodb+srv://<username>:<password>@cluster.mongodb.net/?retryWrites=true&w=majority
-
-# Database name
-DATABASE_NAME=property_management
-```
-
-#### Seed the Database (Optional)
-
-#### Start the Backend Server
-
-```bash
-uvicorn app.main:app --reload
-```
-
-The API will be available at `http://localhost:8000`
+### 2. Backend setup is already known
 
 ### 3. Frontend Setup
 
@@ -181,20 +136,5 @@ The application will open at `http://localhost:3000`
 1. Click the trash icon on any property card
 2. Confirm deletion in the modal dialog
 
-## Development
 
-### Running Tests
-
-```bash
-# Frontend tests
-cd frontend
-npm test
-```
-
-### Building for Production
-
-```bash
-# Frontend build
-cd frontend
-npm run build
-```
+---
